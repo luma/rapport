@@ -44,10 +44,7 @@ See [CONTRIBUTING.md](../master/CONTRIBUTING.md)
 
 ### TODO
 
-* put it on github
-* rename the module to Rapport
-* finish setting up compile to es5 for publish
-* codeclimate + travis CI
+* codeclimate
 * document each type + their constraints and trade offs
 * document the size of the types, as opposed to the size you intuitively expect them to be
 * implement the set from An Optimized Conflict-free Replicated Set
