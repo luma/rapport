@@ -1,10 +1,11 @@
 {
-  "name": "crdt",
-  "version": "0.0.1",
+  "name": "rapport",
+  "version": "1.0.0.pre.1",
   "engines": {
     "node": ">=5.0.0"
   },
   "main": "lib/index.js",
+  "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "build": "babel src -d lib --source-maps",
     "prepublish": "npm run build",
@@ -20,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/opentok/otpeerconnection.git"
+    "url": "git://github.com/luma/rapport.git"
   },
   "dependencies": {
     "babel-polyfill": "^6.3.14",
