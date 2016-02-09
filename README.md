@@ -32,6 +32,12 @@ npm link
 
 **@TODO**
 
+
+### Examples
+
+There are examples of the various types being used in the [example dir](../example).
+
+
 ### Contributing
 
 See [CONTRIBUTING.md](../master/CONTRIBUTING.md)
