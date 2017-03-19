@@ -1,0 +1,28 @@
+syntax = "proto3";
+package rapport;
+
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+
+// option (gogoproto.testgen_all) = true;
+// option (gogoproto.benchgen_all) = true;
+
+
+// Segment represents a single serialised piece of a larger Value
+message Segment {
+  bytes keySuffix = 1;
+  bytes value = 2;
+}
+
+// SegmentsDump represents a collection of segments, from a particular version
+// of the Pith protocol. This is the contents of a DUMP from a bucket.
+message SegmentsDump {
+  string protoVersion = 2;
+  repeated Segment segments = 3;
+}
+
+// ValueDump is a DUMP from a bucket. THe checksum can be used to verify that
+// it is valid before restoring it.
+message ValueDump {
+  uint64 checksum = 1;
+  bytes segments = 2;
+}

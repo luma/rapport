@@ -1,0 +1,11 @@
+syntax = "proto3";
+package rapport;
+
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+
+// option (gogoproto.testgen_all) = true;
+// option (gogoproto.benchgen_all) = true;
+
+message DeferredSet {
+  map<string, bool> members = 1;
+}

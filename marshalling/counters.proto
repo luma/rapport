@@ -1,0 +1,12 @@
+syntax = "proto3";
+package marshalling;
+
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+
+// option (gogoproto.testgen_all) = true;
+// option (gogoproto.benchgen_all) = true;
+
+message PNCounterValue {
+  map<string, int64> inc = 1;
+  map<string, int64> dec = 2;
+}
