@@ -1,8 +1,0 @@
-{
-  "extends": "eslint-config-es6",
-  "parser": "babel-eslint",
-
-  "env": {
-    "jasmine": true,
-  }
-}
