@@ -1,0 +1,16 @@
+syntax = "proto3";
+package marshalling;
+
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+
+// option (gogoproto.testgen_all) = true;
+// option (gogoproto.benchgen_all) = true;
+
+enum ValueType {
+  Register = 0;
+  Counter = 1;
+  Set = 2;
+  Flag = 3;
+  Sequence = 4;
+  Map = 5;
+}

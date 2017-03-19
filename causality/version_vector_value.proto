@@ -1,0 +1,17 @@
+syntax = "proto3";
+package causality;
+
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+
+message Dot {
+  uint64 time = 1 [(gogoproto.casttype) = "LamportTime"];
+}
+
+// VersionVector is a set of replica ids (string) to newest time.
+// VersionVectors can be used to combine events from multiple replicas
+//
+// Think ( {"ReplicaA", 2}, {"ReplicaA", 3} )
+//
+message VersionVectorValue {
+  map<string, Dot> dots = 1;
+}

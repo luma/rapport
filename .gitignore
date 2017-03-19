@@ -1,25 +1,9 @@
-# Logs
-logs
-*.log
+vendor
+*.coverprofile
 
-# Runtime data
-pids
-*.pid
-*.seed
-
-# general reports dir for coverage, instrumentation, etc
-reports
-
-# node-waf configuration
-.lock-wscript
-
-# Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
-
-# Dependency directory
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
-node_modules
-
-lib/
-examples/lib/
-tmp/logs
+// Ignore generated protos
+deferred_set.pb.go
+segment.pb.go
+causality/version_vector_value.pb.go
+marshalling/counters.pb.go
+marshalling/types.pb.go
